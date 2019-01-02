@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 5.3//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-5.3.dtd">
+
+<hibernate-configuration>
+
+    <session-factory>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/address</property>
+        <property name="connection.username">shivani_nagi</property>
+        <property name="connection.password">demo</property>
+        <property name="show_sql">true</property>
+        <property name="dialet">Database dialet class</property>
+    <mapping resource="person.hbm.xml"/>
+    <mapping resource="address.hbm.xml"/>
+
+    </session-factory>
+
+</hibernate-configuration>

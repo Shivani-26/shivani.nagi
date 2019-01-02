@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 5.3//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">
+  
+           <hibernate-mapping>
+          <class name="com.ofs.training.Address" table="address">
+          <id name="id">
+          <generator class="foreign">
+          <param name="property">person</param>
+          </generator>
+          </id>
+          <property name="address_id"></property>
+          <property name="street"></property>
+          <property name="city"></property>
+          <property name="postal_code"></property>
+            
+          <one-to-one name="address"></one-to-one>
+          </class>
+
+          </hibernate-mapping>
